@@ -13,8 +13,6 @@ namespace Eades_Exchanger
             if (currencyChooseOutput == "GBP")
             {
                 currencyOutput = currencyOutput * 1.37887;
-
-
             }
             if (currencyChooseOutput == "CAN")
             {
@@ -31,19 +29,10 @@ namespace Eades_Exchanger
 
             total = total + currencyOutput;
 
-
-
-
-
+            total = Math.Round(total, 2, MidpointRounding.ToEven);
 
             return total;
 
         }
-
-
-
-
-
-
     }
 }

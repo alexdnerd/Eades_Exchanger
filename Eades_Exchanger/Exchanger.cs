@@ -8,9 +8,7 @@ namespace Eades_Exchanger
     {
         public int test;
         
-        //Quarter = Math.Round(Quarter, 2, MidpointRounding.ToEven);
-        //     Quarter = Math.Floor(Quarter);
-
+        
         public static double ExchangeMatherizer(string currencyChooseInput, double currencyInput, string currencyChooseOutput, double currencyOutput)
         {
             if (currencyChooseInput == "USD" && currencyChooseOutput == "GBP")
@@ -93,17 +91,6 @@ namespace Eades_Exchanger
 
         }
 
-        //public static bool ExchangeChecker(string currencyChooseInput, double currencyInput, string currencyChooseOutput, bool checker)
-        //{
-        //    if (currencyChooseInput != "USD", "GBP", "CAN", "EUR")
-        //    {
-        //        checker == "error";
-
-        //    }
-        //}
-
-
-
-
+       
     }
 }
