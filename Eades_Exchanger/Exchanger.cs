@@ -92,5 +92,18 @@ namespace Eades_Exchanger
 
 
         }
+
+        //public static bool ExchangeChecker(string currencyChooseInput, double currencyInput, string currencyChooseOutput, bool checker)
+        //{
+        //    if (currencyChooseInput != "USD", "GBP", "CAN", "EUR")
+        //    {
+        //        checker == "error";
+
+        //    }
+        //}
+
+
+
+
     }
 }
