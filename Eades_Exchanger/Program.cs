@@ -11,7 +11,7 @@ namespace Eades_Exchanger
             string currencyChooseInput;
             double currencyInput;
             string currencyChooseOutput;
-            double currencyOutput;
+            double currencyOutput = 0;
             ConsoleKeyInfo keypress;
 
             do
@@ -31,13 +31,13 @@ namespace Eades_Exchanger
                 currencyChooseOutput = currencyChooseOutput.ToUpper();
 
                 Console.Clear();
-                //currencyOutput = ExchangeObject.ExchangeMatherizer(string currencyChooseInput, double currencyInput, string currencyChooseOutput, double currencyOutput);
+                currencyOutput = Exchanger.ExchangeMatherizer(currencyChooseInput, currencyInput, currencyChooseOutput, currencyOutput);
+
+
+                Console.WriteLine("$" + currencyInput + " (" + currencyChooseInput + ") converted to (" + currencyChooseOutput + ") is $" + currencyOutput + " (" + currencyChooseOutput + ")");
 
 
 
-
-
-                
                 Console.WriteLine("Would you like to make another exchange?");
                 Console.WriteLine("(E)xchange Again (Q)uit:");
                 keypress = Console.ReadKey();
@@ -53,6 +53,7 @@ namespace Eades_Exchanger
 
                 }
             } while (keypress.KeyChar != 'q');
+            Console.WriteLine("You completed XX exchanges with a total of $XXX (USD) exchanged");
             Console.WriteLine("Thank you for exchanging with us");
         }
     }
